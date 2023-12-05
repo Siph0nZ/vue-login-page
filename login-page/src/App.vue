@@ -1,5 +1,4 @@
 <script setup>
-import registerPage from './components/register-page.vue';
 </script>
 
 <template>

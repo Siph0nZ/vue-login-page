@@ -97,15 +97,14 @@ function pswdHide() {
             <div class="container mt-3">
                 <a class="form-link" href="./" id="linkCreateAccount">Don't have an account? Create one</a>
             </div>
+
+            <!-- Login Button -->
+            <div class="container mt-3">
+                <button class="login-button">Login</button>
+            </div>
         </form>
 
-        <!-- Login Button -->
-        <div class="container mt-3">
-            <button class="login-button">Login</button>
-        </div>
-
         <!-- Create an account (HIDDEN) -->
-
         <!-- Sign in -->
         <form class="form form-hidden p-5 fade-in-form" id="createAccount">
             <div class="container mt-3 text-center">
@@ -165,12 +164,12 @@ function pswdHide() {
             <div class="container mt-3">
                 <a class="form-link" href="./" id="linkLogin">Already have an account? Sign in</a>
             </div>  
-        </form>
 
-        <!-- Login Button -->
-        <div class="container mt-3">
-            <button class="login-button">Login</button>
-        </div>
+            <!-- Login Button -->
+            <div class="container mt-3">
+                <button class="login-button">Login</button>
+            </div>
+        </form>
     </div>
 </template>
 

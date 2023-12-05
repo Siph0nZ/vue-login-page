@@ -1,10 +1,10 @@
 import {createRouter, createWebHistory} from 'vue-router';
-import register from '../components/register-page.vue';
+import login from '../components/login-page.vue';
 const routes = [
     {
-        path: '/register',
-        component: register,
-        name: 'Register'
+        path: '/Login',
+        component: login,
+        name: 'Login'
     }
 ] 
 
