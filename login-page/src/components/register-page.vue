@@ -1,3 +1,30 @@
+<script setup>
+// Function to hide/show password \\
+function pswdHide() {
+    var x = document.getElementById("input");
+    var y = document.getElementById("input2");
+    var z = document.getElementById("input3");
+
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+
+    if (y.type === "password") {
+      y.type = "text";
+    } else {
+      y.type = "password";
+  }
+
+  if (z.type === "password") {
+    z.type = "text";
+  } else {
+    z.type = "password";
+  }
+}
+</script>
+
 <template>
         <!-- Welcome Title -->
     <div class="container mt-5">
@@ -74,9 +101,7 @@
 
         <!-- Login Button -->
         <div class="container mt-3">
-            <a href="home-page.html">
-                <button class="login-button">Login</button>
-            </a>
+            <button class="login-button">Login</button>
         </div>
 
         <!-- Create an account (HIDDEN) -->
@@ -136,46 +161,18 @@
                 </label>
             </div>
 
-            <!-- Don't have an account? -->
+            <!-- Already have an account? -->
             <div class="container mt-3">
                 <a class="form-link" href="./" id="linkLogin">Already have an account? Sign in</a>
             </div>  
         </form>
+
         <!-- Login Button -->
         <div class="container mt-3">
-            <a href="home-page.html">
-                <button class="login-button">Login</button>
-            </a>
+            <button class="login-button">Login</button>
         </div>
     </div>
 </template>
-
-<script setup>
-// Function to hide/show password \\
-function pswdHide() {
-    var x = document.getElementById("input");
-    var y = document.getElementById("input2");
-    var z = document.getElementById("input3");
-
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
-
-    if (y.type === "password") {
-      y.type = "text";
-    } else {
-      y.type = "password";
-  }
-
-  if (z.type === "password") {
-    z.type = "text";
-  } else {
-    z.type = "password";
-  }
-}
-</script>
 
 <style scoped>
 </style>
