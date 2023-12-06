@@ -13,53 +13,55 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body{
+html,
+body {
   background-image: url("https://i.pinimg.com/564x/90/9a/d2/909ad238365dbdd7ee088110a24edb39.jpg");
 }
 
-.bg-white{
-  background-color: #FFFFFF;
+.bg-white {
+  background-color: #ffffff;
 }
 
-.bg-grey{   
+.bg-grey {
   background-color: grey;
 }
 
-.bg-transparent{
+.bg-transparent {
   background-color: transparent;
   border-top: none;
   border-left: none;
   border-right: none;
 }
 
-.fade-in-form{
+.fade-in-form {
   font-family: Nexa;
   animation: fadeIn 1s;
   opacity: 0%;
   animation-fill-mode: forwards;
 }
 
-.form-check-input{
+.form-check-input {
   border: solid black;
   cursor: pointer;
 }
 
-.remember, .password{
-  font-weight: bold
+.remember,
+.font-bold {
+  font-weight: bold;
 }
 
-.underline{
+.underline {
   border-bottom: black 0px 0px 3px 0px !important;
   border-width: 3px;
 }
 
-.form-link{
+.form-link {
   font-weight: bold;
 }
 
 .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px     0;
+  margin: 24px 0 12px 0;
 }
 
 .img-fluid {
@@ -67,18 +69,17 @@ html, body{
   border-radius: 50%;
 }
 
-.login-button{
+.login-button {
   background-color: black;
   color: white;
-  padding: 14px 20px;
+  padding: 14px 50px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
   font-weight: bold;
 }
 
-.login-button:hover{
+.login-button:hover {
   opacity: 0.8;
 }
 
@@ -87,29 +88,28 @@ html, body{
   animation: fadeIn 5s;
 }
 
-.typewriter{
+.typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .20em solid white; /* The typwriter cursor */
-  white-space: nowrap ; /* Keeps the content on a single line */
-  letter-spacing: .20em; /* Adjust as needed */
-  width: 13em;
-  word-break:break-all;
-  animation: typing 2s linear infinite alternate;     
+  border-right: 0.2em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  letter-spacing: 0.2em; /* Adjust as needed */
+  width: 15em;
+  word-break: break-all;
+  animation: typing 2.5s linear infinite alternate;
 }
 
-.typewriter-still{
+.typewriter-still {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid; /* The typwriter cursor */
+  border-right: 0.15em solid; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    blink-caret .75s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: blink-caret 0.75s step-end infinite;
   float: left;
 }
 
-.nexa-font{
-  font-family: Nexa
+.nexa-font {
+  font-family: Nexa;
 }
 
 .fade-in-delay {
@@ -119,32 +119,41 @@ html, body{
   animation-fill-mode: forwards;
 }
 
-.text-color-white{
+.text-color-white {
   color: white;
 }
 
-.border-color-white{
+.border-color-white {
   color: white;
   background-color: white;
 }
 
-@keyframes fadeIn{
-  0%{
-      opacity: 0;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  100%{
-      opacity: 1;
+  100% {
+    opacity: 1;
   }
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 13em }
+  from {
+    width: 0;
+  }
+  to {
+    width: 15em;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: white; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
 }
