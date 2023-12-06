@@ -48,10 +48,6 @@ html, body{
   font-weight: bold
 }
 
-.form-hidden{
-  display: none;
-}
-
 .underline{
   border-bottom: black 0px 0px 3px 0px !important;
   border-width: 3px;
