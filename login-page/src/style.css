@@ -97,6 +97,21 @@ html, body{
   animation: typing 2s linear infinite alternate;     
 }
 
+.typewriter-still{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    blink-caret .75s step-end infinite;
+  float: left;
+}
+
+.nexa-font{
+  font-family: Nexa
+}
+
 .fade-in-delay {
   font-family: Nexa;
   animation: fadeIn 4s;
@@ -106,6 +121,11 @@ html, body{
 
 .text-color-white{
   color: white;
+}
+
+.border-color-white{
+  color: white;
+  background-color: white;
 }
 
 @keyframes fadeIn{
@@ -128,4 +148,3 @@ html, body{
   from, to { border-color: transparent }
   50% { border-color: white; }
 }
-
