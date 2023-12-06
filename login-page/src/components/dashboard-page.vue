@@ -19,9 +19,9 @@
     <h1>Search</h1>
     <input
       type="search"
-      class="form-control mx-auto bg-transparent underline text-white"
+      class="search form-control mx-auto bg-transparent underline text-white"
       placeholder="Search"
-      aria-label="Search"
+      id="search"
       style="width: 30%"
     />
   </div>
@@ -41,6 +41,7 @@
   </div>
 
   <!-- Note Cards -->
+  <div class="container= mt-3"></div>
 </template>
 
 <style scoped></style>
