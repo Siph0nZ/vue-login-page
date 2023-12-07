@@ -12,7 +12,9 @@ export default {
   watch: {
     searchPayload: function () {
       this.filteredItems = data.items.filter((item) =>
-        item.title.toLowerCase().includes(this.searchPayload.toLowerCase())
+        (item.title + item.code)
+          .toLowerCase()
+          .includes(this.searchPayload.toLowerCase())
       );
     },
   },
