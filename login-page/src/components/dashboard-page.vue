@@ -12,15 +12,20 @@ export default {
   watch: {
     searchPayload: function () {
       this.filteredItems = data.items.filter((item) =>
-        (item.title + item.code)
+        (item.title + " " + item.code)
           .toLowerCase()
           .includes(this.searchPayload.toLowerCase())
       );
     },
   },
-
-  created: function () {
-    this.filteredItems = data.items;
+  methods: {
+    created: function () {
+      this.filteredItems = data.items;
+    },
+    storePageTitle(item) {
+      localStorage.setItem("pageTitle", item.title);
+      console.log(item);
+    },
   },
 };
 </script>
@@ -54,12 +59,30 @@ export default {
         v-model="searchPayload"
       />
     </div>
-    <div class="items-wrapper" id="items-wrapper">
-      <div class="item-card" v-for="item in filteredItems" :key="item.code">
-        <h4 class="item-card-title">{{ item.title }}</h4>
-        <h5 class="item-card-code">{{ item.code }}</h5>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="nexa-font text-color-white">
+            <a style="text-decoration: none; color: white" href="dashboard">
+              <h1>Notes</h1>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
+    <a style="text-decoration: none"
+      ><div class="items-wrapper" id="items-wrapper">
+        <div
+          @click="this.storePageTitle(item)"
+          class="item-card"
+          v-for="item in filteredItems"
+          :key="item.code"
+        >
+          <h4 class="item-card-title">{{ item.title }}</h4>
+          <h5 class="item-card-code">{{ item.code }}</h5>
+        </div>
+      </div>
+    </a>
   </div>
 </template>
 
